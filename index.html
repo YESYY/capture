@@ -49,7 +49,7 @@
       }  
            function onCaptureSuccess(fileList) 
           {       
-               navigator.notification.alert(File, "compile");
+               
           var i, len, htmlStr;      
            len = fileList.length;    
            //Make sure we had a result; it should always be    
@@ -60,7 +60,8 @@
                for( i = 0, len; i < len; i += 1) {         
                    //
                    alert(fileList[i].fullPath);       
-                   htmlStr += '<li><a href="file:/' + fileList[i].fullPath + '">' + fileList[i].name + '</a></li>';    
+                 //  htmlStr += '<li><a href="file:/' + fileList[i].fullPath + '">' + fileList[i].name + '</a></li>';  
+                            htmlStr += '<li><a href="' + fileList[i].fullPath + '">' + fileList[i].name + '</a></li>';
                }      
                htmlStr += "</ol>";        
                //Set the results content       

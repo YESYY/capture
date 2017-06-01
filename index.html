@@ -58,7 +58,8 @@
            {        
                htmlStr = "<p>Results:</p><ol>";        
                for( i = 0, len; i < len; i += 1) {         
-                   //alert(fileList[i].fullPath);       
+                   //
+                   alert(fileList[i].fullPath);       
                    htmlStr += '<li><a href="file:/' + fileList[i].fullPath + '">' + fileList[i].name + '</a></li>';    
                }      
                htmlStr += "</ol>";        
@@ -78,7 +79,7 @@
 case CaptureError.CAPTURE_INTERNAL_ERR:msgText = "Internal error, the camera or microphone failed to capture image or sound.";  
                       break;    
 case CaptureError.CAPTURE_APPLICATION_BUSY:msgText = "The camera application or audio capture application is currently serving other capture  request.";    
-                      break;      
+                      break;         
 case CaptureError.CAPTURE_INVALID_ARGUMENT:msgText = "Invalid parameter passed to the API.";    
                       break;     
 case CaptureError.CAPTURE_NO_MEDIA_FILES:msgText = "User likely cancelled the capture process.";      

@@ -49,6 +49,7 @@
       }  
            function onCaptureSuccess(fileList) 
           {       
+               navigator.notification.alert(fileList, "compile");
           var i, len, htmlStr;      
            len = fileList.length;    
            //Make sure we had a result; it should always be    
